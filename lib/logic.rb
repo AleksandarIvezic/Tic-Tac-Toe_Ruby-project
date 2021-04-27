@@ -19,9 +19,9 @@ class Game
   def display_board
     puts '+---+---+---+ '
     puts "| #{@board[0].sym} | #{@board[1].sym} | #{@board[2].sym} | "
-    puts "+---+---+---+" 
+    puts '+---+---+---+'
     puts "| #{@board[3].sym} | #{@board[4].sym} | #{@board[5].sym} | "
-    puts "+---+---+---+" 
+    puts '+---+---+---+'
     puts "| #{@board[6].sym} | #{@board[7].sym} | #{@board[8].sym} | "
     puts '+---+---+---+ '
   end
@@ -48,6 +48,7 @@ class Player
 end
 
 class Cell
+  # rubocop: disable Metrics/ClassVars
   @@id = 0
   attr_accessor :sym, :chosen
 
@@ -56,4 +57,5 @@ class Cell
     @chosen = false
     @sym = @@id.to_s
   end
+  # rubocop:enable Metrics/ClassVars
 end
