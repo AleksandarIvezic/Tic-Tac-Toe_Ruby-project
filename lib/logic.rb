@@ -16,6 +16,10 @@ class Game
    raise StandardError if @board[choice-1].chosen
   end
 
+  def display_board 
+    puts "+---+---+---+ \n| #{@board[0].sym} | #{@board[1].sym} | #{@board[2].sym} | \n+---+---+---+ \n| #{@board[3].sym} | #{@board[4].sym} | #{@board[5].sym} | \n+---+---+---+ \n| #{@board[6].sym} | #{@board[7].sym} | #{@board[8].sym} | \n+---+---+---+ "
+  end
+
 end
 
 class Player
@@ -44,6 +48,6 @@ class Cell
     def initialize
         @@id += 1
         @chosen = false
-        @sym = ''
+        @sym = "#{@@id}"
     end
 end
