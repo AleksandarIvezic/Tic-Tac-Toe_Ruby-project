@@ -4,9 +4,12 @@ require './lib/logic'
 
 puts 'Enter the player 1 name:'
 player1 = Player.new(gets.chomp, 'X')
+system 'cls'
+system 'clear'
 puts 'Enter the player 2 name:'
 player2 = Player.new(gets.chomp, 'O')
-
+system 'cls'
+system 'clear'
 puts "#{player1.name} will play with X and #{player2.name} will play with O"
 puts 'Let start!'
 
