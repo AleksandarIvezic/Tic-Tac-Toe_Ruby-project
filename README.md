@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Tic-Tac-Toe_Ruby-project
 
-> One paragraph statement about the project.
+> In this project we are going to make Tic-Tac-Toe game using Ruby.
 
 ![screenshot](./app_screenshot.png)
 
@@ -10,9 +10,7 @@ Additional description about the project and its features.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+-Ruby
 
 ## Live Demo
 
@@ -43,17 +41,17 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Author1**
+👤 **Safa Aballagh**
 
-- Twitter: [@twitterhandle](https://twitter.com/ShaherShamroukh/)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/shaher-shamroukh/)
-- GitHub: [@githubhandle](https://github.com/Shaher-11/)
+- GitHub: [@Safafa](https://github.com/safafa)
+- Twitter: [@safa aballagh](https://twitter.com/Aballagh_S)
+- LinkedIn: [Aballagh Safa](https://www.linkedin.com/in/aballaghsafa/)
 
-👤 **Author2**
+👤 **Aleksandar Ivezic**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
+- GitHub: [@Aleksandar Ivezic](https://github.com/ShinobiWarior)
+- Twitter: [@AIvezic](https://twitter.com/AIvezic)
+- LinkedIn: [Aleksandar Ivezic](https://www.linkedin.com/in/aleksandar-ivezi%C4%87-1a6b0391/)
 
 ## 🤝 Contributing
 
