@@ -26,6 +26,11 @@ until gameover
     retry
   else
     gaming.turn(player1,cell.to_i)
+    if player1.check_winner
+        puts "Player  #{player1.name} win!"
+        gameover = true
+        next
+    end
   end
 
   puts "It's #{player2.name} turn"
@@ -38,10 +43,15 @@ until gameover
     retry
   else
     gaming.turn(player2,cell.to_i)
+    if player2.check_winner
+        puts "Player  #{player2.name} win!"
+        gameover = true
+        next
+    end
   end
 
-  puts "Player  #{player1} win!"
+  
 
-  gameover = true
+  
 
 end
