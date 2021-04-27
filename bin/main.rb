@@ -20,9 +20,17 @@ until gameover
     puts 'Enter valid number'
     retry
   else
+    if cell == '2'
+      puts "it's a Draw"
+      gameover = true
+      next
+    end
+
     pl1_choise.push(cell)
   end
-
+  system 'cls'
+  system 'clear'
+  puts "+---+---+---+ \n| 1 | 2 | 3 | \n+---+---+---+ \n| 4 | 5 | 6 | \n+---+---+---+ \n| 7 | 8 | 9 | \n+---+---+---+ "
   puts "It's #{player2} turn"
   puts 'Please select an available cell on the board'
   begin
@@ -31,6 +39,12 @@ until gameover
     puts 'Enter valid number'
     retry
   else
+    if cell == '2'
+      puts "it's a Draw"
+      gameover = true
+      next
+    end
+
     pl2_choise.push(cell)
   end
 
