@@ -14,11 +14,26 @@ while !gameover do
     
     puts "It's #{player1} turn"
     puts "Please select an available cell on the board"
-    pl1_choise.push(gets.chomp)
+    begin
+    cell = gets.chomp.match(/[1-9]/)[0]
+    rescue
+    puts "Enter valid number"
+    retry
+    else 
+        pl1_choise.push(cell)
+    end
     
     puts "It's #{player2} turn"
     puts "Please select an available cell on the board"
-    pl2_choise.push(gets.chomp)
+    begin
+        cell = gets.chomp.match(/[1-9]/)[0]
+        rescue
+        puts "Enter valid number"
+        retry
+        else 
+            pl2_choise.push(cell)
+    end
+    
     
     puts "Player  #{player1} win!"
 
