@@ -3,10 +3,20 @@
 # Tic-Tac-Toe_Ruby-project
 
 > In this project we are going to make Tic-Tac-Toe game using Ruby.
+> 
+> This project is a tic-tac-toe game on the command line where two human players can play against each other, and the board is displayed in between turns.
 
-![screenshot](./app_screenshot.png)
+- Player 1 name input :
 
-Additional description about the project and its features.
+![screenshot](./screenshots/Enter-player-1.png)
+
+- Game play :
+
+![screenshot](./screenshots/Player-1-turn.png)
+
+- Gameover anounce winner :
+
+![screenshot](./screenshots/The-end-of-the-game.png)
 
 ## Built With
 
@@ -14,31 +24,35 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://replit.com/@safaaballagh/Tic-Tac-ToeRuby-project#.replit)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+ - Ruby installed 
 
 ### Setup
 
-### Install
+ - To download this repository go on this page [Tic-Tac-Toe](https://github.com/ShinobiWarior/Tic-Tac-Toe_Ruby-project) and click on the Code button
+- Then you can choose to download it as a ZIP file or copy HTTPS/ssh address and clone it using Terminal or Bash in your local machine.
+- Enter the file of the Repository with your Terminal/Bash and run "./bin/main.RB"
+ 
+-To run it remotely you can follow the link [Tic-Tac-Toe-Game](https://replit.com/@safaaballagh/Tic-Tac-ToeRuby-project#.replit)
+ 
+## RULES FOR TIC-TAC-TOE
+ 
+1. The game is played on a grid that's 3 squares by 3 squares marked by numbers from 1 to 9
+ 
+2. The first player is X, the second one is O. Players take turns putting their marks in empty squares typing in a number of the square they choose.
+ 
+3. The first player who gets 3 of his/her marks in a row (up, down, across, or diagonally) is the winner.
+ 
+4. When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a draw.
 
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
+If you want extra information about the game rules, check this link from [Wikipedia](https://en.wikipedia.org/wiki/Tic-tac-toe)
+ 
 ## Authors
 
 👤 **Safa Aballagh**
@@ -57,18 +71,9 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/ShinobiWarior/Tic-Tac-Toe_Ruby-project/issues).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](lic.url) licensed.
