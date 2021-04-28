@@ -4,11 +4,28 @@
 
 > In this project we are going to make Tic-Tac-Toe game using Ruby.
 
-![screenshot](./screenshots/Start-the-game.png)
+- Player 1 name input :
+
 ![screenshot](./screenshots/Enter-player-1.png)
+
+- Player 2 name input :
+
 ![screenshot](./screenshots/Enter-Player-2.png)
+
+- Start the game :
+
+![screenshot](./screenshots/Start-the-game.png)
+
+- Player 1 turn :
+
 ![screenshot](./screenshots/Player-1-turn.png)
+
+- Player 2 turn :
+
 ![screenshot](./screenshots/Player-2-turn.png)
+
+- Gameover anounce winner :
+
 ![screenshot](./screenshots/The-end-of-the-game.png)
 
 Additional description about the project and its features.
