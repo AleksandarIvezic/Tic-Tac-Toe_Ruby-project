@@ -3,32 +3,20 @@
 # Tic-Tac-Toe_Ruby-project
 
 > In this project we are going to make Tic-Tac-Toe game using Ruby.
+> 
+> This project is a tic-tac-toe game on the command line where two human players can play against each other, and the board is displayed in between turns.
 
 - Player 1 name input :
 
 ![screenshot](./screenshots/Enter-player-1.png)
 
-- Player 2 name input :
-
-![screenshot](./screenshots/Enter-Player-2.png)
-
-- Start the game :
-
-![screenshot](./screenshots/Start-the-game.png)
-
-- Player 1 turn :
+- Game play :
 
 ![screenshot](./screenshots/Player-1-turn.png)
-
-- Player 2 turn :
-
-![screenshot](./screenshots/Player-2-turn.png)
 
 - Gameover anounce winner :
 
 ![screenshot](./screenshots/The-end-of-the-game.png)
-
-This project is a tic-tac-toe game on the command line where two human players can play against each other, and the board is displayed in between turns.
 
 ## Built With
 
