@@ -28,7 +28,7 @@
 
 ![screenshot](./screenshots/The-end-of-the-game.png)
 
-Additional description about the project and its features.
+This project is a tic-tac-toe game on the command line where two human players can play against each other, and the board is displayed in between turns.
 
 ## Built With
 
@@ -62,6 +62,8 @@ Additional description about the project and its features.
 3. The first player who gets 3 of his/her marks in a row (up, down, across, or diagonally) is the winner.
  
 4. When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a draw.
+
+If you want extra information about the game rules, check this link from [Wikipedia](https://en.wikipedia.org/wiki/Tic-tac-toe)
  
 ## Authors
 
