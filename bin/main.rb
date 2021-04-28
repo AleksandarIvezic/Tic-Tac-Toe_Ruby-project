@@ -1,55 +1,62 @@
 #!/usr/bin/env ruby
+
+require './lib/logic'
+
 puts 'Enter the player 1 name:'
-player1 = gets.chomp
+player1 = Player.new(gets.chomp, 'X')
+system 'cls'
+system 'clear'
 puts 'Enter the player 2 name:'
-player2 = gets.chomp
-
-puts "#{player1} will play with X and #{player2} will play with O"
+player2 = Player.new(gets.chomp, 'O')
+system 'cls'
+system 'clear'
+puts "#{player1.name} will play with X and #{player2.name} will play with O"
 puts 'Let start!'
+
+gaming = Game.new(player1, player2)
 gameover = false
-pl1_choise = []
-pl2_choise = []
+
 until gameover
-  puts "+---+---+---+ \n| 1 | 2 | 3 | \n+---+---+---+ \n| 4 | 5 | 6 | \n+---+---+---+ \n| 7 | 8 | 9 | \n+---+---+---+ "
+  puts gaming.display_board
 
-  puts "It's #{player1} turn"
+  puts "It's #{player1.name} turn"
   puts 'Please select an available cell on the board'
   begin
     cell = gets.chomp.match(/[1-9]/)[0]
+    gaming.choice_available?(cell.to_i)
   rescue StandardError
     puts 'Enter valid number'
     retry
   else
-    if cell == '2'
-      puts "it's a Draw"
+    gaming.turn(player1, cell.to_i)
+    if player1.check_winner
+      puts "Player  #{player1.name} win!"
+      gameover = true
+      next
+    elsif player1.choices.length == 5
+      puts "It's a draw!"
       gameover = true
       next
     end
-
-    pl1_choise.push(cell)
   end
-  system 'cls'
-  system 'clear'
-  puts "+---+---+---+ \n| 1 | 2 | 3 | \n+---+---+---+ \n| 4 | 5 | 6 | \n+---+---+---+ \n| 7 | 8 | 9 | \n+---+---+---+ "
-  puts "It's #{player2} turn"
+  puts gaming.display_board
+  puts "It's #{player2.name} turn"
+
   puts 'Please select an available cell on the board'
   begin
     cell = gets.chomp.match(/[1-9]/)[0]
+    gaming.choice_available?(cell.to_i)
   rescue StandardError
     puts 'Enter valid number'
     retry
   else
-    if cell == '2'
-      puts "it's a Draw"
+    gaming.turn(player2, cell.to_i)
+    if player2.check_winner
+      puts "Player  #{player2.name} win!"
       gameover = true
       next
     end
-
-    pl2_choise.push(cell)
   end
-
-  puts "Player  #{player1} win!"
-
-  gameover = true
-
 end
+
+puts gaming.display_board
