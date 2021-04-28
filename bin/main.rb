@@ -41,6 +41,7 @@ until gameover
   end
   puts gaming.display_board
   puts "It's #{player2.name} turn"
+
   puts 'Please select an available cell on the board'
   begin
     cell = gets.chomp.match(/[1-9]/)[0]
@@ -56,7 +57,6 @@ until gameover
       next
     end
   end
-
 end
 
 puts gaming.display_board
