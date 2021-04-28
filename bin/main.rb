@@ -28,13 +28,13 @@ until gameover
     puts 'Enter valid number'
     retry
   else
-    puts gaming.turn(player1, cell.to_i)
-    if player1.choices.length == 5
-      puts "It's a draw!"
+    gaming.turn(player1, cell.to_i)
+    if player1.check_winner
+      puts "Player  #{player1.name} win!"
       gameover = true
       next
-    elsif player1.check_winner
-      puts "Player  #{player1.name} win!"
+    elsif player1.choices.length == 5
+      puts "It's a draw!"
       gameover = true
       next
     end

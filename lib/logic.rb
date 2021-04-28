@@ -19,16 +19,12 @@ class Game
   end
 
   def display_board
-     '+---+---+---+ ' + "\n" +
-     "| #{@board[0].sym} | #{@board[1].sym} | #{@board[2].sym} | " + "\n" +
-     '+---+---+---+' + "\n" +
-     "| #{@board[3].sym} | #{@board[4].sym} | #{@board[5].sym} | " + "\n" +
-     '+---+---+---+' + "\n" +
-     "| #{@board[6].sym} | #{@board[7].sym} | #{@board[8].sym} | " + "\n" +
-     '+---+---+---+ '
+    "+---+---+---+\n" \
+      "| #{@board[0].sym} | #{@board[1].sym} | #{@board[2].sym} |\n" \
+      "+---+---+---+\n" \
+      "| #{@board[3].sym} | #{@board[4].sym} | #{@board[5].sym} |\n" \
+      "+---+---+---+ \n" \
+      "| #{@board[6].sym} | #{@board[7].sym} | #{@board[8].sym} |\n" \
+      '+---+---+---+ '
   end
 end
-
-
-
-
