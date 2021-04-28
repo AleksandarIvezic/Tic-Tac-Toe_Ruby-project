@@ -17,13 +17,13 @@ class Game
   end
 
   def display_board
-    puts '+---+---+---+ '
-    puts "| #{@board[0].sym} | #{@board[1].sym} | #{@board[2].sym} | "
-    puts '+---+---+---+'
-    puts "| #{@board[3].sym} | #{@board[4].sym} | #{@board[5].sym} | "
-    puts '+---+---+---+'
-    puts "| #{@board[6].sym} | #{@board[7].sym} | #{@board[8].sym} | "
-    puts '+---+---+---+ '
+     return '+---+---+---+ ' + "\n" +
+     "| #{@board[0].sym} | #{@board[1].sym} | #{@board[2].sym} | " + "\n" +
+     '+---+---+---+' + "\n" +
+     "| #{@board[3].sym} | #{@board[4].sym} | #{@board[5].sym} | " + "\n" +
+     '+---+---+---+' + "\n" +
+     "| #{@board[6].sym} | #{@board[7].sym} | #{@board[8].sym} | " + "\n" +
+     '+---+---+---+ '
   end
 end
 

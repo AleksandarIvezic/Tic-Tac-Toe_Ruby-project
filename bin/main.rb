@@ -17,7 +17,7 @@ gaming = Game.new(player1, player2)
 gameover = false
 
 until gameover
-  gaming.display_board
+  puts gaming.display_board
 
   puts "It's #{player1.name} turn"
   puts 'Please select an available cell on the board'
@@ -28,7 +28,7 @@ until gameover
     puts 'Enter valid number'
     retry
   else
-    gaming.turn(player1, cell.to_i)
+    puts gaming.turn(player1, cell.to_i)
     if player1.choices.length == 5
       puts "It's a draw!"
       gameover = true
@@ -39,7 +39,7 @@ until gameover
       next
     end
   end
-  gaming.display_board
+  puts gaming.display_board
   puts "It's #{player2.name} turn"
   puts 'Please select an available cell on the board'
   begin
@@ -59,4 +59,4 @@ until gameover
 
 end
 
-gaming.display_board
+puts gaming.display_board
