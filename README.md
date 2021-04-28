@@ -4,7 +4,12 @@
 
 > In this project we are going to make Tic-Tac-Toe game using Ruby.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./screenshots/Start-the-game)
+![screenshot](./screenshots/Enter-Player-1)
+![screenshot](./screenshots/Enter-Player-2)
+![screenshot](./screenshots/Player-1-turn)
+![screenshot](./screenshots/Player-2-turn)
+![screenshot](./screenshots/The-end-of-the-game)
 
 Additional description about the project and its features.
 
