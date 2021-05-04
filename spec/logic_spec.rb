@@ -15,16 +15,15 @@ describe Game do
                expect(game.player2).to eql("Baraka")
            end
        end
-
        context "when player1 and player2 are not specified" do
         it "raise error" do
             expect{Game.new}.to raise_error
+            end
         end
     end
 
 
     describe "#turn" do
-           
          context "when player make it's turn" do  
             let (:game) {Game.new("Baraka","p2")} 
             let (:choice) {5}
@@ -44,6 +43,19 @@ describe Game do
             end
         end
     end
+
+   describe "#choice_available?" do 
+        let(:player1) {"Aleksandar"}
+        let(:player2) {"Baraka"}
+        let(:choice) { 5 }
+        let(:player) {Player.new("Baraka", "X")}
+        context "When the choice is not available" do
+            it "raise error" do 
+                game = Game.new(player1,player2)
+                game.turn(player, choice)
+                expect {game.choice_available?(choice)}.to raise_error
+            end
+        end
    end
 
    
