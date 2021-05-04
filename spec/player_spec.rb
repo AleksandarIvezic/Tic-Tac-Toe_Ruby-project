@@ -39,4 +39,27 @@ describe Player do
         end
     end
 
+    describe "#play" do
+        context "when we passed a choice as argument" do
+            choice = 3
+            name = "Baraka"
+            symbol = "X"
+            player = Player.new(name, symbol)
+            player.play(choice)
+            it "push choice inside of choices" do
+                expect(player.choices).to include(choice)
+            end
+        end
+
+        context "when we didn't pass a choice as argument" do
+            name = "Baraka"
+            symbol = "X"
+            player = Player.new(name, symbol)
+            it "raise error" do
+                expect{player.play}.to raise_error
+            end
+        end
+
+    end
+
 end
