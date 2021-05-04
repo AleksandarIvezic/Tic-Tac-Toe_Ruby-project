@@ -58,5 +58,25 @@ describe Game do
         end
    end
 
+#    describe "#display_board" do
+#     let(:player1) {"Aleksandar"}
+#     let(:player2) {"Baraka"}
+    
+
+#     context "when board is displayed" do
+#         it "display board" do
+#             game = Game.new(player1,player2)
+#             board = game.board
+#             expect {game.display_board}.to output("+---+---+---+\n" \
+#                 "| #{board[0].sym} | #{board[1].sym} | #{board[2].sym} |\n" \
+#                 "+---+---+---+\n" \
+#                 "| #{board[3].sym} | #{board[4].sym} | #{board[5].sym} |\n" \
+#                 "+---+---+---+ \n" \
+#                 "| #{board[6].sym} | #{board[7].sym} | #{board[8].sym} |\n" \
+#                 '+---+---+---+ ').to_stdout
+#         end
+#     end
+#    end
+
    
 end
