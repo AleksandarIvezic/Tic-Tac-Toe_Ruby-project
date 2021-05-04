@@ -16,7 +16,7 @@ describe Player do
        end
        context "when name and symbol are not specified" do
         it "raise error" do
-            expect{Player.new}.to raise_error
+            expect{Player.new}.to raise_error(StandardError)
             end
         end
     end
@@ -56,7 +56,7 @@ describe Player do
             symbol = "X"
             player = Player.new(name, symbol)
             it "raise error" do
-                expect{player.play}.to raise_error
+                expect{player.play}.to raise_error(StandardError)
             end
         end
 
