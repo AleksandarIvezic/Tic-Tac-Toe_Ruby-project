@@ -65,7 +65,7 @@ If you want extra information about the game rules, check this link from [Wikipe
 
 - GitHub: [@Aleksandar Ivezic](https://github.com/ShinobiWarior)
 - Twitter: [@AIvezic](https://twitter.com/AIvezic)
-- LinkedIn: [Aleksandar Ivezic](https://www.linkedin.com/in/aleksandar-ivezi%C4%87-1a6b0391/)
+- LinkedIn: [Aleksandar Ivezic](https://www.linkedin.com/in/aleksandar-ivezic/)
 
 ## 🤝 Contributing
 
