@@ -73,6 +73,10 @@ Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/ShinobiWarior/Tic-Tac-Toe_Ruby-project/issues).
 
+## Acknowledgments
+
+- This project was inspired by [Microverse](https://www.microverse.org/?grsf=w9rx3c)
+
 ## Show your support
 
 Give a ⭐️ if you like this project!
